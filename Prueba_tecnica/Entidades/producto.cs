@@ -14,5 +14,7 @@ namespace Entidades
         public string id_marca { get; set; }
         public string id_subCategoria { get; set; }
 
+
     }
+    
 }

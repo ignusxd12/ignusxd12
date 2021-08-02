@@ -55,7 +55,7 @@
                                 <div class="col-12 col-md-12 d-flex align-items-right justify-content-end ">
                                     <asp:Button runat="server" ID="btnLimpiar"  class="btn btn-outline-primary ml-2" Style="margin-right: 10px;" type="button" Text="Limpiar Campos" />
                                     <asp:Button ID="btnAgrega" type="button" runat="server" OnClick="BtnAgrega_Click"  class="btn btn-primary" Text="Agregar Producto" />
-                                    <asp:Button ID="btnModifica" type="button" runat="server"  class="btn btn-primary" Text="Modificar Nómina" Visible="false" />
+                                    <asp:Button ID="btnModifica" type="button" runat="server" OnClick="BtnModifica_Click"  class="btn btn-primary" Text="Modificar Nómina" Visible="false" />
                                 </div>
                             </div>
 
@@ -79,10 +79,10 @@
 
                                     <asp:TemplateField HeaderText="Acciones" Visible="true">
                                         <ItemTemplate>
-                                            <a class="d-inline-block px-1" id="btnEdita" style="cursor: pointer;">
+                                            <a class="d-inline-block px-1" id="btnEdita" onclick="EditaDatos(<%# Eval("id_producto") %>)" style="cursor: pointer;">
                                                 Editar
                                             </a>
-                                            <a class="d-inline-block px-1" id="btnPdf" style="cursor: pointer;">
+                                            <a class="d-inline-block px-1" id="btnElimina" onclick="Eliminadatos(<%# Eval("id_producto") %>);" style="cursor: pointer;">
                                                 Eliminar
                                             </a>                                            
                                         </ItemTemplate>
@@ -103,4 +103,13 @@
        
 
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script >
+        function EditaDatos(parameter) {
+            __doPostBack('btnEdita', parameter+"_"+"A");
+        }
+        function Eliminadatos(parameter) {
+            __doPostBack('btnElimina', parameter+"_"+"E");
+        }
+    </script>
 </asp:Content>
