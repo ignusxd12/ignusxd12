@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace ApiPruebaProductos.Models
+namespace Entidades
 {
     public class marca
     {
@@ -11,6 +12,6 @@ namespace ApiPruebaProductos.Models
         public string nombre_marca { get; set; }
         public string id_categoria { get; set; }
         public string id_subCategoria { get; set; }
-        
+
     }
 }

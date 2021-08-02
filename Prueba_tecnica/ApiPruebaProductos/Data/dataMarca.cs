@@ -1,4 +1,4 @@
-﻿using ApiPruebaProductos.Models;
+﻿using Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -56,29 +56,35 @@ namespace ApiPruebaProductos.Data
             lstMarca.Add(new marca { id_marca = "29", nombre_marca = "Dafiti", id_categoria = "3", id_subCategoria = "1" });
 
             //Categoria_SubCategoria_Marca ==> Zapatos_hombre_marcas
-            lstMarca.Add(new marca { id_marca = "5", nombre_marca = "Guante", id_categoria = "3", id_subCategoria = "2" });
-            lstMarca.Add(new marca { id_marca = "6", nombre_marca = "Lacoste", id_categoria = "3", id_subCategoria = "2" });
-            lstMarca.Add(new marca { id_marca = "7", nombre_marca = "Sckechers", id_categoria = "3", id_subCategoria = "2" });
-            lstMarca.Add(new marca { id_marca = "8", nombre_marca = "Clavin Klein", id_categoria = "3", id_subCategoria = "2" });
+            lstMarca.Add(new marca { id_marca = "30", nombre_marca = "Guante", id_categoria = "3", id_subCategoria = "2" });
+            lstMarca.Add(new marca { id_marca = "31", nombre_marca = "Lacoste", id_categoria = "3", id_subCategoria = "2" });
+            lstMarca.Add(new marca { id_marca = "32", nombre_marca = "Sckechers", id_categoria = "3", id_subCategoria = "2" });
+            lstMarca.Add(new marca { id_marca = "33", nombre_marca = "Clavin Klein", id_categoria = "3", id_subCategoria = "2" });
 
             //Categoria_SubCategoria_Marca ==> Zapatos_niño o niña_marcas
-            lstMarca.Add(new marca { id_marca = "30", nombre_marca = "Bubble Gummers", id_categoria = "3", id_subCategoria = "3" });
-            lstMarca.Add(new marca { id_marca = "31", nombre_marca = "Sckechers", id_categoria = "3", id_subCategoria = "3" });
-            lstMarca.Add(new marca { id_marca = "32", nombre_marca = "Babyland", id_categoria = "3", id_subCategoria = "3" });
-            lstMarca.Add(new marca { id_marca = "33", nombre_marca = "TOP", id_categoria = "3", id_subCategoria = "3" });          
-
+            lstMarca.Add(new marca { id_marca = "34", nombre_marca = "Bubble Gummers", id_categoria = "3", id_subCategoria = "3" });
+            lstMarca.Add(new marca { id_marca = "35", nombre_marca = "Sckechers", id_categoria = "3", id_subCategoria = "3" });
+            lstMarca.Add(new marca { id_marca = "36", nombre_marca = "Babyland", id_categoria = "3", id_subCategoria = "3" });
+            lstMarca.Add(new marca { id_marca = "37", nombre_marca = "TOP", id_categoria = "3", id_subCategoria = "3" });
+            List<marca> marcas = new List<marca>();
             try
             {
-
-               lstMarca = lstMarca.FindAll(x => x.id_categoria.Contains(id_categoria));
-                lstMarca = lstMarca.FindAll(x => x.id_subCategoria.Contains(id_subCategoria));
+                foreach (var item in lstMarca)
+                {
+                    if (item.id_categoria==id_categoria && item.id_subCategoria==id_subCategoria)
+                    {
+                        marcas.Add(new marca { id_marca =item.id_marca, nombre_marca = item.nombre_marca, id_categoria =item.id_categoria,id_subCategoria=item.id_subCategoria });
+                    }
+                    
+                }
+              
             }
             catch (Exception e)
             {
 
                 throw;
             }
-            return lstMarca;
+            return marcas;
 
         }
     }

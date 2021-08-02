@@ -1,0 +1,166 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="Prueba_tecnica.Paginas.Site2" %>
+
+<!DOCTYPE html>
+
+<%--<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>--%>
+
+<html lang="es">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Productos</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>  
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+
+    <%--<style>
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            /*background-color: #dee2e6;*/
+            overflow-x: hidden;
+            padding-left: 3px;
+            padding-top: 30px;
+        }
+    </style>--%>
+</head>
+<body>
+    <form runat="server" id="smFormulario" method="post">
+        <asp:ScriptManager ID="smMain" runat="server">
+            <Scripts>
+               
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+
+               <%-- <asp:ScriptReference Path="~/Scripts/select2.js" />
+                <asp:ScriptReference Path="~/Content/ExportPdf/html2pdf.js" />
+                <asp:ScriptReference Path="~/Content/DataTable/js/jquery.dataTables.js" />
+                <asp:ScriptReference Path="~/Content/DataTable/js/dataTables.bootstrap4.min.js" />
+                <asp:ScriptReference Path="~/Scripts/popper.min.js" />--%>
+               
+
+
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div class="bg-light py-2">
+            <div class="container-xl">
+                <asp:Panel ID="pnlMenu" runat="server" Visible="false">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                       <%-- <a class="navbar-brand" href="#">
+                            <asp:Image ID="imgLogo" runat="server" ImageUrl="~/imgs/logo-itau.png" />
+                        </a>--%>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <%--<asp:LinkButton ID="lnkAdmNomina" runat="server" CssClass="nav-item nav-link" PostBackUrl="~/vistas/creacion/seleccionar_nomina" Text="Administar nóminas" CausesValidation="false" />
+                                <asp:LinkButton ID="lnkDigNomina" runat="server" CssClass="nav-item nav-link" PostBackUrl="~/vistas/creacion/digitar_nomina" Text="Digitar nóminas" CausesValidation="false" />
+                                <asp:LinkButton ID="lnkBeneficiario" runat="server" CssClass="nav-item nav-link" PostBackUrl="~/vistas/beneficiarios/adm_beneficiario" Text="Administrar Beneficiarios" CausesValidation="false" />--%>
+                            </div>
+                        </div>
+                    </nav>
+                </asp:Panel>
+
+                <!-- Main -->
+                <div class="row py-2">
+                    <!-- Form Content -->
+                    <div class="col-12 col-md-12">
+                        <div class="bg-white border p-5">
+                            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <%-- <script>
+            $(document).ready(function () {
+                $(function () {
+                    $('[data-toggle="tooltip"]').tooltip();
+                });
+
+                $('.select2').select2({
+                    language: "es",
+                    minimumResultsForSearch: -1,
+                });
+            });
+
+            function expExc(html, nombre) {
+                var a = document.createElement('a');
+                var data_type = 'data:application/vnd.ms-excel';
+                a.href = data_type + ', ' + escape(html);
+                a.download = nombre + '.xls';
+                a.click();
+            }
+
+            function expPdf(element, nombre) {
+                var opt = {
+                    margin: 0.5,
+                    filename: nombre + '.pdf',
+                    image: { type: 'jpeg', quality: 0.98 },
+                    html2canvas: { scale: 2 },
+                    jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+
+                };
+                html2pdf(element, opt);
+            }
+
+            function getFecha() {
+                let date = new Date()
+
+                var s = "-";
+                let day = date.getDate()
+                let month = date.getMonth() + 1
+                let year = date.getFullYear()
+                var dma;
+                if (month < 10) {
+                    month = "0" + month;
+                }
+                if (day < 10) {
+                    day = "0" + day;
+                }
+                dma = year + s + month + s + month;
+                return dma;
+            }
+        </script>--%>
+    </form>
+</body>
+</html>
+

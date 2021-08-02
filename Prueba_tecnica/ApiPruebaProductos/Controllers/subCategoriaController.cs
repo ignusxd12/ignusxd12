@@ -1,5 +1,5 @@
 ﻿using ApiPruebaProductos.Data;
-using ApiPruebaProductos.Models;
+using Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +13,9 @@ namespace ApiPruebaProductos.Controllers
     {
         public static dataSubCategoria dataSub = new dataSubCategoria();
         // GET: api/subCategoria
-        public IEnumerable<subCategoria> Get(string id_categoria)
+        public IEnumerable<subCategoria> Get()
         {
-            return  dataSub.getListSubCategorias(id_categoria);
+            return  dataSub.getListSubCategorias();
         }
 
        

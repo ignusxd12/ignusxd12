@@ -1,4 +1,4 @@
-﻿using ApiPruebaProductos.Models;
+﻿using Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,4 +1,4 @@
-﻿using ApiPruebaProductos.Models;
+﻿using Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,8 +14,9 @@ namespace ApiPruebaProductos.Data
            return lstProducto;
         }
 
-        public void insertListaProducto(producto p)
+        public bool insertListaProducto(producto p)
         {
+            bool estado = false;
             try
             {
                 lstProducto.Add(
@@ -25,13 +26,14 @@ namespace ApiPruebaProductos.Data
                     id_categoria =p.id_categoria,
                     id_subCategoria =p.id_subCategoria,
                     id_marca =p.id_marca });
-            }
+                estado = true;
+            }           
             catch (Exception e)
             {
 
                 throw;
             }
-
+            return estado;
         }
 
         public List<producto> getLisByidProducto(string id_producto)

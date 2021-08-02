@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prueba_tecnica", "Prueba_te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiPruebaProductos", "ApiPruebaProductos\ApiPruebaProductos.csproj", "{B7D2107B-A73E-4AD0-B7E9-44AFEF9A592B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{8A8B8726-C94A-4EA7-AD9C-2DC422D32AAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B7D2107B-A73E-4AD0-B7E9-44AFEF9A592B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7D2107B-A73E-4AD0-B7E9-44AFEF9A592B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7D2107B-A73E-4AD0-B7E9-44AFEF9A592B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A8B8726-C94A-4EA7-AD9C-2DC422D32AAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A8B8726-C94A-4EA7-AD9C-2DC422D32AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A8B8726-C94A-4EA7-AD9C-2DC422D32AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A8B8726-C94A-4EA7-AD9C-2DC422D32AAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
