@@ -12,14 +12,18 @@ namespace ApiPruebaProductos.Data
         {
 
             List<categoria> lstCategoria = new List<categoria>();
+            List<subCategorias> lstS = new List<subCategorias>();
            
             try
             {
-
-                lstCategoria.Add(new categoria { id_categoria = "1", nombre_categoria = "Lenceria" });
+                lstS.Add(new subCategorias {id_categoria="1",nombre_categoria="Boxer" });
+                lstCategoria.Add(new categoria { id_categoria = "1", nombre_categoria = "Lenceria",subCategoria=lstS });
                 lstCategoria.Add(new categoria { id_categoria = "2", nombre_categoria = "Ropa" });
                 lstCategoria.Add(new categoria { id_categoria = "3", nombre_categoria = "Zapatos" });
+                
+
                
+
             }
             catch (Exception e)
             {

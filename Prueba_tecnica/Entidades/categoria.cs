@@ -10,6 +10,14 @@ namespace Entidades
     {
         public string id_categoria { get; set; }
         public string nombre_categoria { get; set; }
+        public List<subCategorias> subCategoria { get; set; }
+
+    }
+
+    public class subCategorias
+    {
+        public string id_categoria { get; set; }
+        public string nombre_categoria { get; set; }
 
     }
 }
