@@ -1,0 +1,12 @@
+.img-carrusel{
+    background-image: url(https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/a249096c7812deb8c3c2c907173f3774.jpe);
+    background-repeat: no-repeat;
+    background-size: 100%,200rem;
+    object-fit: cover;
+}
+.uss-card{
+    height: 100%;
+}
+.uss-card__body{
+    justify-content: space-between;
+}

@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeGOD</title>
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/@ussebastian/kitdigital@latest/dist/css/main.css"
+/>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <section class="w-100">
+            <header class="w-100">
+              <nav class="uss-topnav hide-on-mobile">
+                <div class="container uss-topnav-wrapper">
+                    <button class="uss-btn uss-btn--theme-toggle" onclick="window.toggleTheme()">
+                        <i class="uss-icon"></i>
+                      </button>
+
+                  <ul class="uss-topnav-items">
+                    <li class="uss-topnav__menu-item">
+                      <a href="#" class="uss-topnav__menu-item-link uss-topnav__menu-item-link--icon">
+                        <i class="uss-icon ri-facebook-line"></i>
+                      </a>
+                    </li>
+                    <li class="uss-topnav__menu-item">
+                      <a href="#" class="uss-topnav__menu-item-link uss-topnav__menu-item-link--icon">
+                        <i class="uss-icon ri-twitter-line"></i>
+                      </a>
+                    </li>
+                    <li class="uss-topnav__menu-item">
+                      <a href="#" class="uss-topnav__menu-item-link uss-topnav__menu-item-link--icon">
+                        <i class="uss-icon ri-instagram-line"></i>
+                      </a>
+                    </li>
+                    <li class="uss-topnav__menu-item">
+                      <a href="#" class="uss-topnav__menu-item-link uss-topnav__menu-item-link--icon">
+                        <i class="uss-icon ri-youtube-line"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <nav id="mainmenu" class="uss-mainnav hide-on-mobile">
+                <div class="container uss-mainnav__wrap">
+                  <a id="mainmenu-home" href="#uss" class="uss-nav__logo-link">
+                    <picture>
+                      <source srcset="https://dummyimage.com/310x96/" media="(prefers-color-scheme:dark)">
+                      <img class="uss-nav__logo" src="https://dummyimage.com/220x68/" height="68px">
+                    </picture>
+                  </a>
+                  <div class="uss-mainnav__menu">
+                    <ul class="uss-mainnav__items">
+                      <li class="uss-mainnav__item">
+                        <a href="serie.html" class="uss-mainnav__item-link"> Series </a>
+                      </li>
+                      <li class="uss-mainnav__item">
+                        <a href="#" class="uss-mainnav__item-link"> Mangas </a>
+                      </li>
+                      <li class="uss-mainnav__item">
+                        <button class="uss-mainnav__item-link" data-subitem-ref="0">
+                          Categorias
+                          <i class="uss-icon ri-arrow-drop-down-line"></i>
+                        </button>
+                        <div class="uss-mainnav__subitems-wrapper" data-subitem-target="0">
+                          <ul class="uss-mainnav__sub-items">
+                            <li class="uss-mainnav__item">
+                              <a class="uss-mainnav__subitem-link" href="#">Shonen</a>
+                            </li>
+                            <li class="uss-mainnav__item">
+                              <a class="uss-mainnav__subitem-link" href="#">Gore</a>
+                            </li>
+                            <li class="uss-mainnav__item">
+                              <a class="uss-mainnav__subitem-link" href="#">Isekai</a>
+                            </li>
+                            <li class="uss-mainnav__item">
+                              <a class="uss-mainnav__subitem-link" href="#">Aventura</a>
+                            </li>
+                            <li class="uss-mainnav__item">
+                              <a class="uss-mainnav__subitem-link" href="#">Otros
+                                <i class="uss-icon ri-external-link-line ri-s"></i>
+                              </a>
+                            </li>
+                          </ul>
+                          <ul class="uss-mainnav__sub-items">
+                            <li class="uss-mainnav__item">
+                              <a class="uss-mainnav__subitem-link" href="#">Acción</a>
+                            </li>
+                            <li class="uss-mainnav__item">
+                              <a class="uss-mainnav__subitem-link" href="#">Romance</a>
+                            </li>
+                            <li class="uss-mainnav__item">
+                              <a class="uss-mainnav__subitem-link" href="#">Terror</a>
+                            </li>
+                            <li class="uss-mainnav__item">
+                              <a class="uss-mainnav__subitem-link" href="#">Suspenso</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="uss-mainnav__item">
+                        <a href="#" class="uss-mainnav__item-link"> Personajes </a>
+                      </li>
+                      <li class="uss-mainnav__item">
+                        <a href="#" class="uss-mainnav__item-link"> Ranking </a>
+                      </li>              
+                      <li class="uss-mainnav__item">
+                        <button class="uss-mainnav__item-link" data-subitem-ref="1">
+                          Perfil
+                          <i class="uss-icon ri-arrow-drop-down-line"></i>
+                        </button>
+                        <div class="uss-mainnav__subitems-wrapper" data-subitem-target="1">
+                          <ul class="uss-mainnav__sub-items">
+                            <li class="uss-mainnav__item">
+                              <a class="uss-mainnav__subitem-link" href="#">Inicia Sesión</a>
+                            </li>
+                            <li class="uss-mainnav__item">
+                              <a class="uss-mainnav__subitem-link" href="#">AnimeFLV</a>
+                            </li>
+                            <li class="uss-mainnav__item">
+                              <a class="uss-mainnav__subitem-link" href="#">AnimeID</a>
+                            </li>
+                            <li class="uss-mainnav__item">
+                              <a class="uss-mainnav__subitem-link" href="#">JKAnime</a>
+                            </li>
+                            <li class="uss-mainnav__item">
+                              <a class="uss-mainnav__subitem-link" href="#">Texto label externo
+                                <i class="uss-icon ri-external-link-line ri-s"></i>
+                              </a>
+                            </li>
+                          </ul>
+                          <ul class="uss-mainnav__sub-items">
+                            <li class="uss-mainnav__item">
+                              <a class="uss-mainnav__subitem-link" href="#">Investigación1</a>
+                            </li>
+                            <li class="uss-mainnav__item">
+                              <a class="uss-mainnav__subitem-link" href="#">Doctorados</a>
+                            </li>
+                            <li class="uss-mainnav__item">
+                              <a class="uss-mainnav__subitem-link" href="#">Informativos VRID</a>
+                            </li>
+                            <li class="uss-mainnav__item">
+                              <a class="uss-mainnav__subitem-link" href="#">Fondos concursables I+D</a>
+                            </li>
+                          </ul>
+                          <ul class="uss-mainnav__sub-items">
+                            <li class="uss-mainnav__item">
+                              <a class="uss-mainnav__subitem-link" href="#">Informativos VRID</a>
+                            </li>
+                            <li class="uss-mainnav__item">
+                              <a class="uss-mainnav__subitem-link" href="#">Fondos concursables I+D</a>
+                            </li>
+                            <li class="uss-mainnav__item">
+                              <a class="uss-mainnav__subitem-link" href="#">Texto label externo
+                                <i class="uss-icon ri-external-link-line ri-s"></i>
+                              </a>
+                            </li>
+                            <li class="uss-mainnav__item">
+                              <a class="uss-mainnav__subitem-link" href="#">Oficina de transferencia y licenciamiento lorem ipsum dolor sit</a>
+                            </li>
+                            <li class="uss-mainnav__item">
+                              <a class="uss-mainnav__subitem-link" href="#">Item 7</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <nav class="uss-mainnav--mobile show-on-mobile">
+                <div class="container uss-mainnav__wrap">
+                  <div class="uss-mainnav__topnav">
+                    <a href="#uss" class="uss-nav__logo-link">
+                      <picture>
+                        <source srcset="https://dummyimage.com/310x96/" media="(prefers-color-scheme:dark)">
+                        <img class="uss-nav__logo" src="https://dummyimage.com/155x48/" height="48px">
+                      </picture>
+                    </a>
+                    <div class="uss-nav__icons">
+                      <button data-toggle-nav-mobile class="uss-btn uss-btn--icon">
+                        <i class="uss-icon ri-menu-line"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="container uss-mainnav__menu">
+                    <ul class="uss-menu-accordion">
+                      <li class="uss-menu-accordion__item">
+                        <a href="#" class="uss-menu-accordion__item-link"> Series </a>
+                      </li>
+                      <li class="uss-menu-accordion__item">
+                        <a href="#" class="uss-menu-accordion__item-link"> Mangas </a>
+                      </li>
+                      <li class="uss-menu-accordion__item">
+                        <button class="uss-menu-accordion__item-link" data-subitem-ref="0">
+                         Categorias
+                          <i class="uss-icon ri-arrow-drop-down-line"></i>
+                        </button>
+                        <ul class="uss-menu-accordion__sub-items" data-subitem-target="0">
+                          <li class="uss-menu-accordion__subitem">
+                            <a class="uss-menu-accordion__subitem-link" href="#">Shonen</a>
+                          </li>
+                          <li class="uss-menu-accordion__subitem">
+                            <div class="uss-menu-accordion__subitem-link-subtitle">Gore</div>
+                          </li>
+                          <li class="uss-menu-accordion__subitem">
+                            <a class="uss-menu-accordion__subitem-link" href="#">Isekai</a>
+                          </li>
+                          <li class="uss-menu-accordion__subitem">
+                            <a class="uss-menu-accordion__subitem-link" href="#">Aventura</a>
+                          </li>
+                          <li class="uss-menu-accordion__subitem">
+                            <a class="uss-menu-accordion__subitem-link" href="#">
+                              Otros
+                              <i class="uss-icon ri-external-link-line ri-s"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="uss-menu-accordion__item">
+                        <a href="#" class="uss-menu-accordion__item-link"> Personajes </a>
+                      </li>
+                      <li class="uss-menu-accordion__item">
+                        <a href="#" class="uss-menu-accordion__item-link"> Ranking </a>
+                      </li>
+                      <li class="uss-menu-accordion__item">
+                        <a href="#" class="uss-menu-accordion__item-link"> Perfil </a>
+                      </li>
+                     
+                    
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </header>
+          </section>
+          <section data-uss-carousel="uss-carousel-cards" data-uss-title="" data-uss-visible-items="2" data-uss-draggable>
+            <div class="uss-carousel-cards__item-container">
+              <div class="uss-card img-carrusel">
+                <div class="uss-card__body">
+                  <a href="#" class="uss-tag uss-tag--secondary mb-20"> One Piece </a>                
+                  <a href="#" class="uss-btn uss-btn--tertiary">
+                    Ver Ahora
+                    <i class="uss-icon ri-arrow-right-circle-line"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="uss-carousel-cards__item-container">
+              <div class="uss-card">
+                <div class="uss-card__body">
+                  <a href="#" class="uss-tag uss-tag--secondary mb-20"> Tag secundario </a>
+                  <div class="overline text-color--alt">Metadato introductorio</div>
+                  <div class="h5 mb-20">Titulo de la card</div>
+                  <p class="p-size--sm mb-32">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh consectetur consequat
+                    scelerisque donec imperdiet donec. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.
+                  </p>
+                  <a href="#" class="uss-btn uss-btn--tertiary">
+                    Botón terciario
+                    <i class="uss-icon ri-arrow-right-circle-line"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="uss-carousel-cards__item-container">
+              <div class="uss-card">
+                <div class="uss-card__body">
+                  <a href="#" class="uss-tag uss-tag--secondary mb-20"> Tag secundario </a>
+                  <div class="overline text-color--alt">Metadato introductorio</div>
+                  <div class="h5 mb-20">Titulo de la card</div>
+                  <p class="p-size--sm mb-32">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh consectetur consequat
+                    scelerisque donec imperdiet donec. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.
+                  </p>
+                  <a href="#" class="uss-btn uss-btn--tertiary">
+                    Botón terciario
+                    <i class="uss-icon ri-arrow-right-circle-line"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="uss-carousel-cards__item-container">
+              <div class="uss-card">
+                <div class="uss-card__body">
+                  <a href="#" class="uss-tag uss-tag--secondary mb-20"> Tag secundario </a>
+                  <div class="overline text-color--alt">Metadato introductorio</div>
+                  <div class="h5 mb-20">Titulo de la card</div>
+                  <p class="p-size--sm mb-32">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh consectetur consequat
+                    scelerisque donec imperdiet donec. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.
+                  </p>
+                  <a href="#" class="uss-btn uss-btn--tertiary">
+                    Botón terciario
+                    <i class="uss-icon ri-arrow-right-circle-line"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="uss-carousel-cards__item-container">
+              <div class="uss-card">
+                <div class="uss-card__body">
+                  <a href="#" class="uss-tag uss-tag--secondary mb-20"> Tag secundario </a>
+                  <div class="overline text-color--alt">Metadato introductorio</div>
+                  <div class="h5 mb-20">Titulo de la card</div>
+                  <p class="p-size--sm mb-32">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh consectetur consequat
+                    scelerisque donec imperdiet donec. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.
+                  </p>
+                  <a href="#" class="uss-btn uss-btn--tertiary">
+                    Botón terciario
+                    <i class="uss-icon ri-arrow-right-circle-line"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="uss-carousel-cards__item-container">
+              <div class="uss-card">
+                <div class="uss-card__body">
+                  <a href="#" class="uss-tag uss-tag--secondary mb-20"> Tag secundario </a>
+                  <div class="overline text-color--alt">Metadato introductorio</div>
+                  <div class="h5 mb-20">Titulo de la card</div>
+                  <p class="p-size--sm mb-32">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh consectetur consequat
+                    scelerisque donec imperdiet donec. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.
+                  </p>
+                  <a href="#" class="uss-btn uss-btn--tertiary">
+                    Botón terciario
+                    <i class="uss-icon ri-arrow-right-circle-line"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="uss-divider uss-card my-40"></section>
+          <section class="row my-12">
+            <div class="col-md-2 uss-card mb-24">
+                <div class="uss-card uss-card--background-alt">
+                  <img lazy class="uss-card__img" src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/a249096c7812deb8c3c2c907173f3774.jpe" alt="dummyimage">
+                  <div class="uss-card__body">
+                    <a href="#" class="uss-tag uss-tag--secondary mb-20"> Tag secundario </a>
+                    <div class="overline text-color--alt">Metadato introductorio</div>
+                    <p class="mb-32">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh consectetur consequat.
+                    </p>
+                    <a href="#" class="uss-btn uss-btn--tertiary mt-auto">
+                      Botón terciario
+                      <i class="uss-icon ri-arrow-right-circle-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            <div class="col-md-2 uss-card mb-24">
+              <div class="uss-card uss-card--background-alt">
+                <img lazy class="uss-card__img" src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/e66d5a8f5167c8bc7a7fd5baa52961c5.jpe" alt="dummyimage">
+                <div class="uss-card__body">
+                  <a href="#" class="uss-tag uss-tag--secondary mb-20"> Tag secundario </a>
+                  <div class="overline text-color--alt">Metadato introductorio</div>
+                  <p class="mb-32">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh consectetur consequat.
+                  </p>
+                  <a href="#" class="uss-btn uss-btn--tertiary mt-auto">
+                    Botón terciario
+                    <i class="uss-icon ri-arrow-right-circle-line"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 uss-card mb-24">
+                <div class="uss-card uss-card--background-alt">
+                  <img lazy class="uss-card__img" src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/17596e54a22e60b33887ff00d4df0245.jpe" alt="dummyimage">
+                  <div class="uss-card__body">
+                    <a href="#" class="uss-tag uss-tag--secondary mb-20"> Tag secundario </a>
+                    <div class="overline text-color--alt">Metadato introductorio</div>
+                    <p class="mb-32">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh consectetur consequat.
+                    </p>
+                    <a href="#" class="uss-btn uss-btn--tertiary mt-auto">
+                      Botón terciario
+                      <i class="uss-icon ri-arrow-right-circle-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 uss-card mb-24">
+                <div class="uss-card uss-card--background-alt">
+                  <img lazy class="uss-card__img" src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/4305090653ee4239dd0d797f1a4a6bdf.jpe" alt="dummyimage">
+                  <div class="uss-card__body">
+                    <a href="#" class="uss-tag uss-tag--secondary mb-20"> Tag secundario </a>
+                    <div class="overline text-color--alt">Metadato introductorio</div>
+                    <p class="mb-32">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh consectetur consequat.
+                    </p>
+                    <a href="#" class="uss-btn uss-btn--tertiary mt-auto">
+                      Botón terciario
+                      <i class="uss-icon ri-arrow-right-circle-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 uss-card mb-24">
+                <div class="uss-card uss-card--background-alt">
+                  <img lazy class="uss-card__img" src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/ad3c6bbdc8d6e3a236292f3e8223f852.jpe" alt="dummyimage">
+                  <div class="uss-card__body">
+                    <a href="#" class="uss-tag uss-tag--secondary mb-20"> Tag secundario </a>
+                    <div class="overline text-color--alt">Metadato introductorio</div>
+                    <p class="mb-32">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh consectetur consequat.
+                    </p>
+                    <a href="#" class="uss-btn uss-btn--tertiary mt-auto">
+                      Botón terciario
+                      <i class="uss-icon ri-arrow-right-circle-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 uss-card mb-24">
+                <div class="uss-card uss-card--background-alt">
+                  <img lazy class="uss-card__img" src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/7ce6bedc77c1c73383d404e7c1de2e4e.jpe" alt="dummyimage">
+                  <div class="uss-card__body">
+                    <a href="#" class="uss-tag uss-tag--secondary mb-20"> Tag secundario </a>
+                    <div class="overline text-color--alt">Metadato introductorio</div>
+                    <p class="mb-32">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh consectetur consequat.
+                    </p>
+                    <a href="#" class="uss-btn uss-btn--tertiary mt-auto">
+                      Botón terciario
+                      <i class="uss-icon ri-arrow-right-circle-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+          </section>
+          <section class="row my-12">
+            <div class="col-md-2 uss-card mb-24">
+                <div class="uss-card uss-card--background-alt">
+                  <img lazy class="uss-card__img" src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/efec45c8a6e22eca462728e9347992d8.jpe" alt="dummyimage">
+                  <div class="uss-card__body " >
+                    <a href="#" class="uss-tag uss-tag--secondary mb-20"> Tag secundario </a>
+                    <div class="overline text-color--alt">Metadato introductorio</div>
+                    <p class="mb-32">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh consectetur consequat.
+                    </p>
+                    <a href="#" class="uss-btn uss-btn--tertiary mt-auto">
+                      Botón terciario
+                      <i class="uss-icon ri-arrow-right-circle-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            <div class="col-md-2 uss-card mb-24">
+              <div class="uss-card uss-card--background-alt">
+                <img lazy class="uss-card__img" src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/6b944913c4e0a705b1fdc0e426e24530.jpe" alt="dummyimage">
+                <div class="uss-card__body">
+                  <a href="#" class="uss-tag uss-tag--secondary mb-20"> Tag secundario </a>
+                  <div class="overline text-color--alt">Metadato introductorio</div>
+                  <p class="mb-32">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh consectetur consequat.
+                  </p>
+                  <a href="#" class="uss-btn uss-btn--tertiary mt-auto">
+                    Botón terciario
+                    <i class="uss-icon ri-arrow-right-circle-line"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 uss-card mb-24">
+                <div class="uss-card uss-card--background-alt">
+                  <img lazy class="uss-card__img" src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/6fe06a15f85835d629c5735292219961.jpe" alt="dummyimage">
+                  <div class="uss-card__body">
+                    <a href="#" class="uss-tag uss-tag--secondary mb-20"> Tag secundario </a>
+                    <div class="overline text-color--alt">Metadato introductorio</div>
+                    <p class="mb-32">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh consectetur consequat.
+                    </p>
+                    <a href="#" class="uss-btn uss-btn--tertiary mt-auto">
+                      Botón terciario
+                      <i class="uss-icon ri-arrow-right-circle-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 uss-card mb-24">
+                <div class="uss-card uss-card--background-alt">
+                  <img lazy class="uss-card__img" src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/bcc213e8825420a85790049366d409fd.jpe" alt="dummyimage">
+                  <div class="uss-card__body">
+                    <a href="#" class="uss-tag uss-tag--secondary mb-20"> Tag secundario </a>
+                    <div class="overline text-color--alt">Metadato introductorio</div>
+                    <p class="mb-32">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh consectetur consequat.
+                    </p>
+                    <a href="#" class="uss-btn uss-btn--tertiary mt-auto">
+                      Botón terciario
+                      <i class="uss-icon ri-arrow-right-circle-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 uss-card mb-24">
+                <div class="uss-card uss-card--background-alt">
+                  <img lazy class="uss-card__img" src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/34cf65c200da726462d0c0ac7e0e55af.jpe" alt="dummyimage">
+                  <div class="uss-card__body">
+                    <a href="#" class="uss-tag uss-tag--secondary mb-20"> Tag secundario </a>
+                    <div class="overline text-color--alt">Metadato introductorio</div>
+                    <p class="mb-32">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh consectetur consequat.
+                    </p>
+                    <a href="#" class="uss-btn uss-btn--tertiary mt-auto">
+                      Botón terciario
+                      <i class="uss-icon ri-arrow-right-circle-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 uss-card mb-24">
+                <div class="uss-card uss-card--background-alt">
+                  <img lazy class="uss-card__img" src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/6aaf36afb57680cdc5812e28a98bb62d.jpe" alt="dummyimage">
+                  <div class="uss-card__body">
+                    <a href="#" class="uss-tag uss-tag--secondary mb-20"> Tag secundario </a>
+                    <div class="overline text-color--alt">Metadato introductorio</div>
+                    <p class="mb-32">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh consectetur consequat.
+                    </p>
+                    <a href="#" class="uss-btn uss-btn--tertiary mt-auto">
+                      Botón terciario
+                      <i class="uss-icon ri-arrow-right-circle-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+          </section>
+          
+          <footer class="uss-footer w-100">
+            <div class="uss-footer-sublinks">
+              <div class="container py-128">
+                <div class="row gap-64">
+                  <div class="col-md-3">
+                    <aside class="uss-linked-list">
+                      <h6 class="h6 mb-20">La uiversidad</h6>
+                      <ul class="uss-linked-list__items">
+                        <li class="uss-linked-list__item">
+                          <a href="#" class="uss-btn uss-btn--link">
+                            Proyecto Educativo
+                            <i class="uss-icon ri-external-link-line"></i>
+                          </a>
+                        </li>
+                        <li class="uss-linked-list__item">
+                          <a href="#" class="uss-btn uss-btn--link"> Nuestra Institución </a>
+                        </li>
+                        <li class="uss-linked-list__item">
+                          <a href="#" class="uss-btn uss-btn--link"> ¿Por qué la USS? </a>
+                        </li>
+                        <li class="uss-linked-list__item">
+                          <a href="#" class="uss-btn uss-btn--link"> Extesión Cultural </a>
+                        </li>
+                        <li class="uss-linked-list__item">
+                          <a href="#" class="uss-btn uss-btn--link"> Nuestras Redes Sociales </a>
+                        </li>
+                        <li class="uss-linked-list__item">
+                          <a href="#" class="uss-btn uss-btn--link"> Vinculación con el Medio </a>
+                        </li>
+                        <li class="uss-linked-list__item">
+                          <a href="#" class="uss-btn uss-btn--link">
+                            Trabaja en la USS
+                            <i class="uss-icon ri-external-link-line"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </aside>
+                  </div>
+                  <div class="col-md-3">
+                    <aside class="uss-linked-list">
+                      <h6 class="h6 mb-20">Estudiantes</h6>
+                      <ul class="uss-linked-list__items">
+                        <li class="uss-linked-list__item">
+                          <a href="#" class="uss-btn uss-btn--link">
+                            Bienestar Estudiantil
+                            <i class="uss-icon ri-external-link-line"></i>
+                          </a>
+                        </li>
+                        <li class="uss-linked-list__item">
+                          <a href="#" class="uss-btn uss-btn--link"> Vida Universitaria </a>
+                        </li>
+                        <li class="uss-linked-list__item">
+                          <a href="#" class="uss-btn uss-btn--link"> Deportes </a>
+                        </li>
+                        <li class="uss-linked-list__item">
+                          <a href="#" class="uss-btn uss-btn--link"> Voluntariados </a>
+                        </li>
+                        <li class="uss-linked-list__item">
+                          <a href="#" class="uss-btn uss-btn--link"> Desarrollo y Liderazgo </a>
+                        </li>
+                        <li class="uss-linked-list__item">
+                          <a href="#" class="uss-btn uss-btn--link"> Nuevos Sebastianos </a>
+                        </li>
+                      </ul>
+                    </aside>
+                  </div>
+                  <div class="col-md-3">
+                    <aside class="uss-linked-list">
+                      <h6 class="h6 mb-20">Acreditación</h6>
+                      <ul class="uss-linked-list__items">
+                        <li class="uss-linked-list__item">
+                          <a href="#" class="uss-btn uss-btn--link">
+                            Acreditación Institucional
+                            <i class="uss-icon ri-external-link-line"></i>
+                          </a>
+                        </li>
+                        <li class="uss-linked-list__item">
+                          <a href="#" class="uss-btn uss-btn--link"> Acreditación de Carreras y Programas </a>
+                        </li>
+                        <li class="uss-linked-list__item">
+                          <a href="#" class="uss-btn uss-btn--link"> Equipo </a>
+                        </li>
+                        <li class="uss-linked-list__item">
+                          <a href="#" class="uss-btn uss-btn--link"> Sitios de Interés </a>
+                        </li>
+                        <li class="uss-linked-list__item">
+                          <a href="#" class="uss-btn uss-btn--link"> Desarrollo y Liderazgo </a>
+                        </li>
+                      </ul>
+                    </aside>
+                  </div>
+                </div>
+              </div>
+            </div>
+         
+            <div class="dark uss-footer-baseline">
+              <div class="container">
+                <div class="row uss-footer__wrapper">
+                  <div class="col-lg-6 uss-footer__links">
+                    <ul class="uss-footer__nav">
+                      <li class="uss-footer__item">
+                        <a class="uss-footer__link" href="http://">Ver politicas de privacidad</a>
+                      </li>
+                      <li>
+                        <a class="uss-footer__link" href="http://">Términos legales</a>
+                      </li>
+                      <li>
+                        <a class="uss-footer__link" href="http://">Preguntas frecuentes</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6 uss-footer__phone-socials">
+                    <a class="uss-link uss-link--phone" href="phone:600 771 3000">
+                      <i class="uss-icon ri-phone-line"></i>
+                      600 771 3000
+                    </a>
+                    <ul class="uss-footer__nav uss-footer__nav-social">
+                      <li class="uss-footer__item">
+                        <a class="uss-btn uss-btn--icon uss-btn--icon-sm" href="">
+                          <i class="uss-icon ri-s ri-facebook-line"></i>
+                        </a>
+                      </li>
+                      <li class="uss-footer__item">
+                        <a class="uss-btn uss-btn--icon uss-btn--icon-sm" href="">
+                          <i class="uss-icon ri-s ri-twitter-line"></i>
+                        </a>
+                      </li>
+                      <li class="uss-footer__item">
+                        <a class="uss-btn uss-btn--icon uss-btn--icon-sm" href="">
+                          <i class="uss-icon ri-s ri-instagram-line"></i>
+                        </a>
+                      </li>
+                     
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+    </div>
+   
+    <script
+    crossorigin="anonymous"
+    type="module"
+    src="https://unpkg.com/@ussebastian/kitdigital@latest/dist/js/main.js"
+  ></script>
+</body>
+</html>
