@@ -1,12 +1,51 @@
+.uss-card{
+    height: 100%;
+}
 .img-carrusel{
     background-image: url(https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/a249096c7812deb8c3c2c907173f3774.jpe);
     background-repeat: no-repeat;
     background-size: 100%,200rem;
     object-fit: cover;
+    
 }
-.uss-card{
-    height: 100%;
+.img-kaiju{
+    background-image: url(https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/e66d5a8f5167c8bc7a7fd5baa52961c5.jpe);
+    background-repeat: no-repeat;
+    background-size: 100%,200rem;
+    object-fit: cover;
+    
 }
+.img-tsukimichi {
+    background-image: url('https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/17596e54a22e60b33887ff00d4df0245.jpe');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.img-solo{
+    background-image: url('https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/4305090653ee4239dd0d797f1a4a6bdf.jpe');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.img-new-gate{
+    background-image: url('https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/efec45c8a6e22eca462728e9347992d8.jpe');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.img-frieren{
+    background-image: url('https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/bcc213e8825420a85790049366d409fd.jpe');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.text-frieren{
+    color:transparent;
+}
+
 .uss-card__body{
     justify-content: space-between;
+}
+.uss-btn{
+    color:var(--text-strong)
 }
